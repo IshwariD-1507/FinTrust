@@ -1,0 +1,110 @@
+[
+  {
+    "post_id": "DEMO01",
+    "content": "Buy XYZ today! Guaranteed 30% returns in one month with zero risk.",
+    "platform": "Telegram",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R1", "R2", "R3"],
+    "expected_result": "RED",
+    "explanation": "High-priority warning triggering R1 (guaranteed returns and zero risk), R2 (30% in one month), and R3 (urgency with today)."
+  },
+  {
+    "post_id": "DEMO02",
+    "content": "This video is sponsored by ABC Financial Education. Investing involves risk, and returns are not guaranteed.",
+    "platform": "YouTube",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R5", "R7"],
+    "expected_result": "GREEN",
+    "explanation": "Legitimate sponsored educational content triggering R5 (sponsorship disclosure) and R7 (risk awareness). No warning rules triggered."
+  },
+  {
+    "post_id": "DEMO03",
+    "content": "Join my premium trading group and use my affiliate link to access exclusive stock tips.",
+    "platform": "Telegram",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R4", "R5"],
+    "expected_result": "AMBER",
+    "explanation": "Promotional post triggering R4 (premium group, exclusive tips) and R5 (affiliate disclosure marker). Review recommended."
+  },
+  {
+    "post_id": "DEMO04",
+    "content": "Buy this stock immediately before it is too late. Last chance to profit!",
+    "platform": "X",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R3"],
+    "expected_result": "AMBER",
+    "explanation": "FOMO and high-pressure language triggering R3 ('before it is too late', 'last chance'). Review recommended."
+  },
+  {
+    "post_id": "DEMO05",
+    "content": "Stock markets can rise or fall. Research a company's fundamentals and understand the risks before investing.",
+    "platform": "YouTube",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R7"],
+    "expected_result": "GREEN",
+    "explanation": "Balanced educational discussion triggering R7 (risk awareness, market volatility). No warning patterns detected."
+  },
+  {
+    "post_id": "DEMO06",
+    "content": "Double your money in 15 days. Guaranteed profits for every investor.",
+    "platform": "Instagram",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R1", "R2"],
+    "expected_result": "RED",
+    "explanation": "Severe high-priority warning triggering R1 (guaranteed profits) and R2 (double money in 15 days)."
+  },
+  {
+    "post_id": "DEMO07",
+    "content": "This educational video explains diversification and long-term investing. This is general information, not personalised investment advice.",
+    "platform": "YouTube",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R7"],
+    "expected_result": "GREEN",
+    "explanation": "Educational content triggering R7 (diversification, long-term, not personalised advice disclaimer). No warning rules triggered."
+  },
+  {
+    "post_id": "DEMO08",
+    "content": "Earn 5% every week through my secret trading strategy. Join now!",
+    "platform": "Telegram",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R2", "R3", "R4"],
+    "expected_result": "AMBER",
+    "explanation": "Triggering R2 (unrealistic weekly return), R3 (urgency with 'join now'), and R4 (secret trading strategy monetization)."
+  },
+  {
+    "post_id": "DEMO09",
+    "content": "I may earn a commission if you purchase the financial course through my affiliate link.",
+    "platform": "Instagram",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R4", "R5"],
+    "expected_result": "AMBER",
+    "explanation": "Affiliate course promotion triggering R4 (course sales) and R5 (commission disclosure). Review recommended."
+  },
+  {
+    "post_id": "DEMO10",
+    "content": "Our analysis considers revenue growth, debt, and market risks. Please review the original company filings before making a decision.",
+    "platform": "YouTube",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R6", "R7"],
+    "expected_result": "GREEN",
+    "explanation": "Fundamental research referencing company filings and market risks. No warning patterns triggered."
+  },
+  {
+    "post_id": "DEMO11",
+    "content": "This stock is guaranteed to rise. Buy now and act before everyone else.",
+    "platform": "Telegram",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R1", "R3"],
+    "expected_result": "RED",
+    "explanation": "Triggering R1 (guaranteed to rise) and R3 (urgency with 'buy now' and 'act before everyone else'). High-priority review."
+  },
+  {
+    "post_id": "DEMO12",
+    "content": "Our sponsored market newsletter discusses several companies. All investments involve risk, and readers should conduct their own research.",
+    "platform": "Other",
+    "synthetic_demo": true,
+    "expected_rule_ids": ["R5", "R7"],
+    "expected_result": "GREEN",
+    "explanation": "Newsletter disclosing sponsorship (R5) alongside standard risk and research disclaimers (R7). No warning patterns detected."
+  }
+]

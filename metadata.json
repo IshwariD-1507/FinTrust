@@ -1,0 +1,6 @@
+{
+  "name": "FinTrust — Financial Influencer Credibility Checker",
+  "description": "Transparent, rule-based screening tool helping retail investors assess financial influencer content, identify warning patterns, check disclosures, and verify official SEBI registration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
